@@ -1,1 +1,175 @@
-Hello World.
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>One Page Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ol id="contactList">
+                <li>Jane Doe</li>
+                <li>jane.doe@gmail.com</li>
+                <li>+323-1234 567</li>
+            </ol>
+            <ul id="navList">
+                <li><a href="#recommendations-section">Recommendations</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#skills-section">Skills</a></li>
+                <li><a href="#aboutme-section">About me</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="maindiv">
+        <div class="two-columns-grid">
+            <div class="column1">
+                <img src="https://www.svgrepo.com/show/408173/woman-technologist.svg"
+                alt="a person holding a laptop...">
+            </div>
+            <div class="column2">
+                <h3 id="aboutme-section">Hi, I'm Jane DOE!</h3>
+                <p>
+                    I am a full stack developer with 2 years of
+                    experience in both application and presentation layers. I have
+                    worked on applications and microservices deployed on IBM Cloud. I
+                    am an avid user of IBM Watson Services and have worked on
+                    Watson Assistant, NLU, Sentiment analyzer to name a few.
+                </p>
+            </div>
+        </div>
+        <h2 id="skills-section">Skills</h2>
+        <div class="skill-list-container">
+
+            <div class="skill-card">
+                <h3 class="skill-title">Java</h3>
+                <p class="skill-description">Some text</br>Some text</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">Node.js</h3>
+                <p class="skill-description">Some text</br>Some text</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">Java</h3>
+                <p class="skill-description">Some text</br>Some text</p>
+            </div>
+
+            <div class="skill-card">
+
+                <h3 class="skill-title">CSS</h3>
+                <p class="skill-description">Some text</br>Some text</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">HTML</h3>
+                <p class="skill-description">Some text</br>Some text</p>
+            </div>
+            <div class="skill-card">
+                <h3 class="skill-title">Javascript</h3>
+                <p class="skill-description">Some text</br>Some text</p>
+            </div>
+        </div>
+
+        <div>
+            <h2 id="projects-section">Projects</h2>
+            
+            <div class="collapse" tabindex="1">
+                <h5 class="project-name">Project Name: ChatBot</h5>
+                <div class="proj-descr">
+                    <p>
+                        Project description:
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Nunc in massa luctus, aliquet ligula ullamcorper, aliquet justo.</li>
+                        <li>Nam aliquam lacus mattis nunc volutpat, vulputate interdum diam tristique.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse" tabindex="1">
+                <h5>Project Name: Sentiment Analyzer</h5>
+                <div class="proj-descr">
+                    <p>
+                        Project description:
+                    <ul>
+                        <li>Mauris vehicula libero vitae eros fermentum bibendum.</li>
+                        <li>Nullam accumsan nisl ac eleifend pulvinar.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse" tabindex="1">
+                <h5>Project Name: Fashion Website</h5>
+                <div class="proj-descr">
+                    <p>
+                        Project description:
+                    <ul>
+                        <li>Aliquam porta lorem non ex ornare vestibulum id nec dui.</li>
+                        <li>Etiam vel lectus nec risus ullamcorper ultricies.</li>
+                        <li>Phasellus egestas urna tincidunt, egestas urna in, rutrum velit.</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="recs-section">
+            <h2 id="recommendations-section">Recommendations</h2>
+            <div class="recommendation-list-container">
+
+                <div class="recommendation-card">
+                    <p>
+                        "Mauris nulla mauris, tincidunt sed mauris in, interdum sodales enim."
+                    </p>
+                    <p>__Winnie The Pooh</p>
+                </div>
+                <div class="recommendation-card">
+                    <p>
+                        "Mauris ultrices leo dignissim, luctus orci quis, placerat lorem. Interdum et malesuada fames ac
+                        ante ipsum primis in faucibus. Proin semper tempus elit id ultricies. Cras accumsan ultrices
+                        risus at fringilla. Quisque vitae finibus est. Integer scelerisque vestibulum libero, at lacinia
+                        tellus rhoncus vel. Aliquam non tincidunt purus. Curabitur iaculis eros dui, sed tincidunt nibh
+                        facilisis sed."
+                    </p>
+                    <p>__Anonymous</p>
+                </div>
+                <div class="recommendation-card">
+                    <p>
+                        "Maecenas at orci odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+                        cubilia curae; Duis odio elit, tincidunt sit amet condimentum mattis, ultricies non leo.
+                        Vestibulum auctor nec eros aliquam porttitor. Quisque vitae tortor nibh. Cras sed ligula lorem.
+                        Aliquam sed elit eget eros tristique fermentum in vitae ipsum. Vestibulum ipsum felis,
+                        scelerisque ut risus sed, imperdiet hendrerit velit."
+                    </p>
+                    <p>__Hello World</p>
+                </div>
+
+            </div>
+            <div id="form-area">
+                <form name="recsform" id="recsform" onsubmit="submitRecommendation(event);">
+                    <fieldset>
+                        <legend>Leave your recommendation:</legend>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" name="fullname" placeholder="Full Name (optional)">
+                        <label for="comment">Your comment:</label>
+                        <textarea id="comment" name="comment" rows="3" cols="30" minlength="10" maxlength="100"
+                            required></textarea>
+                        <button id="submitBtn" class="submit-rec" type="submit">Submit</button>
+                    </fieldset>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <button class="up-btn"><a href="#navList">Up &uarr;</a></button>
+    </footer>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
